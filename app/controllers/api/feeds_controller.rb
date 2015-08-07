@@ -4,7 +4,8 @@ class Api::FeedsController < ApplicationController
   end
 
   def show
-    render :json => Feed.find(params[:id])
+    # got it
+    render :json => Feed.find(params[:id]), include: :entries
   end
 
   def create

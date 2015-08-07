@@ -25,4 +25,6 @@ gem 'bcrypt-ruby', '~> 3.0.0', require: "bcrypt"
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'pry-rails'
+  gem 'byebug'
 end
